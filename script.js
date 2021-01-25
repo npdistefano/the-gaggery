@@ -6,7 +6,13 @@ const opts = {
   "The Gaggery",
   "The Gaggery",
   "The Gaggery",
-  "The Gaggery"],
+  "The Gaggery",
+  "The Gaggery",
+  "The Gaggery",
+  "The Gaggery",
+  "The Gaggery",
+  "The Gaggery"
+],
 
 
   FONT_SIZE: 160,
