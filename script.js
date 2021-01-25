@@ -1,19 +1,20 @@
 // OPTIONS
 const opts = {
   TEXT: [
-  "The Gaggery",
-  "The Gaggery",
-  "The Gaggery",
-  "The Gaggery",
-  "The Gaggery",
-  "The Gaggery",
-  "The Gaggery",
-  "The Gaggery",
-  "The Gaggery",
-  "The Gaggery",
-  "The Gaggery"
-],
-
+    "The Gaggery",
+    "The Gaggery",
+    "The Gaggery",
+    "The Gaggery",
+    "The Gaggery",
+    "The Gaggery",
+    "The Gaggery",
+    "The Gaggery",
+    "The Gaggery",
+    "The Gaggery",
+    "The Gaggery",
+    "The Gaggery",
+    "The Gaggery"
+  ],
 
   FONT_SIZE: 160,
   FILL: "#4F3A4B",
@@ -24,27 +25,27 @@ const opts = {
   CURVE_STRENGTH: 0.8,
   WAVE_SPEED: 0.02,
 
-  LOOP: true };
-
+  LOOP: true
+};
 
 const COLORS = [
-"#F03F35",
-"#B7E3E4",
-"#FFFFFF",
-"#B7E3E4",
-"#F03F35",
-"#FFFFFF"];
+  "#F03F35",
+  "#B7E3E4",
+  "#FFFFFF",
+  "#B7E3E4",
+  "#F03F35",
+  "#FFFFFF"
 
 
 
-
+];
 
 let resetFills = false;
 
 console.clear();
 
 function map(n, start1, stop1, start2, stop2) {
-  return (n - start1) / (stop1 - start1) * (stop2 - start2) + start2;
+  return ((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
 }
 
 function randColor() {
@@ -120,7 +121,7 @@ class Line {
   }
 
   moveY(y) {
-    this.path.commands.forEach(cmd => {
+    this.path.commands.forEach((cmd) => {
       switch (cmd.type) {
         case "M":
         case "L":
@@ -134,62 +135,62 @@ class Line {
         case "Q":
           cmd.y1 += y;
           cmd.y += y;
-          break;}
-
+          break;
+      }
     });
   }
 
   stretchX() {
-    this.path.commands.forEach(cmd => {
+    this.path.commands.forEach((cmd) => {
       Line.processCmdPoints(cmd, (x, y) => {
         return {
           x: map(x, this.x1, this.x2, 0, width),
-          y };
-
+          y
+        };
       });
     });
   }
 
   topOffset(index) {
-    this.path.commands.forEach(cmd => {
+    this.path.commands.forEach((cmd) => {
       Line.processCmdPoints(cmd, (x, y) => {
-        let yImpact = (this.y2 - y) / this.height * opts.CURVE_STRENGTH;
+        let yImpact = ((this.y2 - y) / this.height) * opts.CURVE_STRENGTH;
 
         let sinX = map(
-        x,
-        0,
-        width,
-        0 + timer + index,
-        2 * Math.PI + timer + index);
-
+          x,
+          0,
+          width,
+          0 + timer + index,
+          2 * Math.PI + timer + index
+        );
         let sinY = Math.sin(sinX);
         const offsetY = y + sinY * this.height * yImpact;
         return {
           x,
-          y: offsetY };
-
+          y: offsetY
+        };
       });
     });
   }
 
   bottomOffset(index) {
-    this.path.commands.forEach(cmd => {
+    this.path.commands.forEach((cmd) => {
       Line.processCmdPoints(cmd, (x, y) => {
-        let yImpact = (y - this.y1) / this.height * opts.CURVE_STRENGTH;
+        let yImpact = ((y - this.y1) / this.height) * opts.CURVE_STRENGTH;
 
         let sinX = map(
-        x,
-        0,
-        width,
-        0 + timer + index,
-        2 * Math.PI + timer + index);
-
+          x,
+          0,
+          width,
+          0 + timer + index,
+          2 * Math.PI + timer + index
+        );
         let sinY = Math.sin(sinX);
         const offsetY = y + sinY * this.height * yImpact;
         return {
           x,
-          y: offsetY };
-
+          y: offsetY
+        };
       });
     });
   }
@@ -211,14 +212,14 @@ class Line {
       cmd.x2 = point.x;
       cmd.y2 = point.y;
     }
-  }}
-
+  }
+}
 
 async function main() {
   // Load font and get path
   font = await opentype.load(fontFile);
 
-  opts.TEXT.forEach(line => {
+  opts.TEXT.forEach((line) => {
     lines.push(new Line(font, line));
   });
   draw();
