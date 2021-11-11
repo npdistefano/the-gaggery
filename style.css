@@ -50,6 +50,23 @@ li {
   /* 24px */
 }
 
+/* unvisited link */
+a {
+  color: #F03F35;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #F03F35;
+}
+
+/* mouse over link */
+a:hover {
+  color: #A82C25;
+  text-decoration: underline;
+}
+
 #footer {
 }
 
