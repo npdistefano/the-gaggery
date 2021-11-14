@@ -56,12 +56,6 @@ a:hover {
   text-decoration: underline;
 }
 
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 #main-nav {
   background: #fff;
   font-family: 'Karla', sans-serif;
@@ -147,7 +141,9 @@ a.button-label {
   cursor: pointer;
 }
 
-#footer {}
+#footer {
+
+}
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 1024px) {
