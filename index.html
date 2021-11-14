@@ -1,69 +1,272 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html lang="en">
 
 <head>
-  <!-- Website Info -->
-  <!-- thanks to https://twitter.com/lokesh -->
-  <meta charset="UTF-8">
-  <title>The Gaggery - A Drag Race Podcast</title>
-  <meta name="author" content="Lexi Alston & Nick Di Stefano">
-  <meta name="description" content="A podcast about drag from non-drag queens, looking at all things Drag Race, Gradula, and beyond.">
+	<!-- Website Info -->
+	<title>The Gaggery - A Drag Race Podcast</title>
+	<meta charset="utf-8" />
+	<meta name="author" content="Lexi Alston & Nick Di Stefano">
+	<meta name="description" content="A podcast about drag from non-drag queens, looking at all things Drag Race, Gradula, and beyond.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-  <!-- Favicon Info -->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
-  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#f8ebdc">
-  <meta name="theme-color" content="#f8ebdc">
+	<!-- Styling -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 
-  <!-- Styling Info -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="style.css">
-
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#f8ebdc">
+	<meta name="theme-color" content="#f8ebdc">
 </head>
 
-<body>
-  <!-- partial:index.partial.html -->
+<body class="is-preload">
 
-  <nav id="main-nav">
-    <div class="container">
-      <div class="menu-wrap">
-        <div class="menu-left-side">
-          <div class="menu-left">
-            <div class="logo">
-              <h1>The Gaggery</h1>
-              <h2>A drag fan podcast</h2>
-            </div>
-          </div>
-        </div>
-        <div class="menu-right">
-          <div class="menu-center">
-            <ul>
-              <li><a title="Follow The Gaggery on Twitter for updates" href="https://twitter.com/the_gaggery">Some sort of a Songbird</a></li>
-            </ul>
-          </div>
-          <div class="button">
-            <a class="button-label" title="Listen to us with Anchor to listen to our podcast in your favorite apps" href="anchor.fm/the-gaggery">Listen</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#intro">Welcome</a></li>
+					<li><a href="#one">Leave it on, please</a></li>
+					<li><a href="#two">some sort of songbird</a></li>
+					<li><a href="#three">Get in touch</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
 
-  
-  <main>
-    <canvas id="canvas"></canvas>
-  </main>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-  <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/opentype.js/1.3.3/opentype.min.js'></script>
-  <script src='https://cdn.jsdelivr.net/npm/lodash.shuffle@4.2.0/index.js'></script>
-  <script src="script.js"></script>
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<canvas id="canvas"></canvas>
+			<div class="inner">
+				<h1>The Gaggery</h1>
+				<p>A fan podcast for all things drag (by non-drag queens).</p>
+				<ul class="actions">
+					<li><a href="https://anchor.fm/the-gaggery" class="button scrolly">Listen on Anchor</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- One -->
+		<section id="one" class="wrapper style2 spotlights">
+			<section>
+				<a href="#" class="image"><img src="images/merch/extra-everything-black.png" alt="" data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Extra Everything</h2>
+						<p>One cannot be extra when one is everything.</br>We stan Dominique.</p>
+						<ul class="actions">
+							<li><a href="https://cottonbureau.com/products/extra-everything" title="Buy the Extra Everything t-shirt on Cotton Bureau" class="button">Get this shirt</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/merch/bon-in-the-bimini-banana.png" alt="" data-position="top center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>A Bon in the Bimini</h2>
+						<p>You know the old saying.</br>A bon in the bimini is worth two in the boulash.</p>
+						<ul class="actions">
+							<li><a href="https://cottonbureau.com/products/bon-in-the-bimini" title="Buy the Bon in the Bimini t-shirt on Cotton Bureau" class="button">Get this shirt</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/merch/slang-tastic-for-800-royal.png" alt="" data-position="25% 25%" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Slang-tastic</h2>
+						<p>What is "throwing shade?"</br>Slang-tastic for $800, please.</p>
+						<ul class="actions">
+							<li><a href="generic.html" title="Buy the Slang-Tastic t-shirt on Cotton Bureau" class="button">Get this shirt</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/merch/together-white.png" alt="" data-position="25% 25%" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Together</h2>
+						<p>'Trans Rights' and 'Gay Rights': Someday We'll Be Together Again</p>
+						<ul class="actions">
+							<li><a href="generic.html" title="Buy the Together t-shirt on Cotton Bureau" class="button">Get this shirt</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/merch/charcuterie-brown.png" alt="" data-position="25% 25%" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Charcuterie</h2>
+						<p>What's your love language?</p>
+						<ul class="actions">
+							<li><a href="generic.html" title="Buy the Charcuterie t-shirt on Cotton Bureau" class="button">Get this shirt</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/merch/crystal-gem-black.png" alt="" data-position="25% 25%" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Crystal Gem</h2>
+						<p>The odds are against us, it won't be easy</br>But we're not going to do it alone</p>
+						<ul class="actions">
+							<li><a href="generic.html" title="Buy the Crystal Gem t-shirt on Cotton Bureau" class="button">Get this shirt</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<!-- Two -->
+		<section id="two" class="wrapper style3 fade-up">
+			<div class="inner">
+				<h2>Follow us for updates</h2>
+				<p>Stay connected with us for new episodes, news, and general updates.</p>
+				<div class="features">
+					<section>
+						<span class="icon solid major brands fa-twitter"></span>
+						<h3>Twitter</h3>
+						<p><a href="https://twitter.com/The_Gaggery" title="Follow us on Twitter">@the_gaggery</a></p>
+					</section>
+					<section>
+						<span class="icon solid major brands fa-instagram"></span>
+						<h3>Instagram</h3>
+						<p><a href="https://www.instagram.com/the_gaggery/" title="See our photos on Instagram">@the_gaggery</a></p>
+					</section>
+					<section>
+						<span class="icon solid major brands fa-youtube"></span>
+						<h3>Youtube</h3>
+						<p><a href="https://www.youtube.com/channel/UCx1jR6Sv4m_8JCZemDXIO9Q" title="Watch us on YouTube">The Gaggery</a></p>
+					</section>
+					<section>
+						<span class="icon solid major fa-podcast"></span>
+						<h3>Anchor</h3>
+						<p><a href="https://anchor.fm/the-gaggery" title="Listen to us on Anchor">@the-gaggery</a></p>
+					</section>
+					<!--
+					<section>
+						<span class="icon solid major fa-link"></span>
+						<h3>Urna quis bibendum</h3>
+						<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+					</section>
+					<section>
+						<span class="icon major fa-gem"></span>
+						<h3>Aliquam urna dapibus</h3>
+						<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+					</section>
+				-->
+				</div>
+				<ul class="actions">
+					<li><a href="https://www.buymeacoffee.com/thegaggery" title="Suppport us and become a member" class="button">Buy us a coffee</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Three -->
+		<section id="three" class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>Get in touch</h2>
+				<p>Want to get in touch? Send us an email or follow us on social.</p>
+				<div class="split style1">
+					<section>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="5"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><a href="" class="button submit">Send Message</a></li>
+							</ul>
+						</form>
+					</section>
+					<section>
+						<ul class="contact">
+							<li>
+								<h3>Address</h3>
+								<span>Werkin' the World</span>
+							</li>
+							<li>
+								<h3>Email</h3>
+								<a href="mailto:thegaggery@gmail.com">thegaggery@gmail.com</a>
+							</li>
+							<li>
+								<h3>Phone</h3>
+								<span>‪(857) 256-1243‬</span>
+							</li>
+							<li>
+								<h3>Social</h3>
+								<ul class="icons">
+									<li><a href="https://anchor.fm/the-gaggery" class="icon fa-podcast"><span class="label">Anchor</span></a></li>
+									<li><a href="https://twitter.com/The_Gaggery" class="icon brands fa-twitter" title="Follow us on Twitter"><span class="label">Twitter</span></a></li>
+									<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+									<li><a href="https://www.instagram.com/the_gaggery/" class="icon brands fa-instagram" title="See our photos on Instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.youtube.com/channel/UCx1jR6Sv4m_8JCZemDXIO9Q" class="icon brands fa-youtube" title="Watch us on YouTube"><span class="label">YouTube</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; <a href="#intro">The Gaggery</a>. All rights reserved (unless otherwise noted).</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<!-- partial -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/opentype.js/1.3.3/opentype.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/lodash.shuffle@4.2.0/index.js'></script>
+	<script src="script.js"></script>
 
 </body>
 

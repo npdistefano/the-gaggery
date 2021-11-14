@@ -21,8 +21,8 @@ const opts = {
   ],
 
   FONT_SIZE: 160,
-  FILL: "#4F3A4B",
-  BG_COLOR: "#4F3A4B",
+  FILL: "#312450",
+  BG_COLOR: "#5e42a6",
 
   LINE_GAP: 10,
 
@@ -33,17 +33,9 @@ const opts = {
 };
 
 const COLORS = [
-  "#F03F35", /* Red */
-  "#B7E3E4", /* Light Blue */
-  "#FFFFFF", /* White */
-  "#B7E3E4",
-  "#F03F35",
-  "#FFFFFF"
-
-
-
+  "#563c98",
+  "#6648b4",
 ];
-
 let resetFills = false;
 
 console.clear();
@@ -85,6 +77,11 @@ function setupCanvas() {
 
   canvas.style.width = `${width}px`;
   canvas.style.height = `${height}px`;
+
+  /*
+  canvas.style.width = `100px`;
+  canvas.style.height = `100px`;
+  */
 
   // Set actual size in memory (scaled to account for extra pixel density).
   // Change scale to 1 on retina screens to see blurry canvas.
