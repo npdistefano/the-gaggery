@@ -33,9 +33,9 @@ const opts = {
 };
 
 const COLORS = [
-  "#F03F35",
-  "#B7E3E4",
-  "#FFFFFF",
+  "#F03F35", /* Red */
+  "#B7E3E4", /* Light Blue */
+  "#FFFFFF", /* White */
   "#B7E3E4",
   "#F03F35",
   "#FFFFFF"
