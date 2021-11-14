@@ -3629,7 +3629,7 @@ body.is-preload .wrapper.fade>.inner {
 }
 
 #footer>.inner a {
-	border-bottom-color: rgba(255, 255, 255, 0.15);
+	border-bottom-color: rgba(255, 255, 255, 0.75);
 }
 
 #footer>.inner a:hover {
